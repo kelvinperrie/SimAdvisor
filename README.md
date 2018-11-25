@@ -2,7 +2,11 @@ FOR DECADES MANKIND HAS YEARNED FOR A RETURN TO A SIMPLER TIME, WHERE THE ADVISO
 
 ## Intro
 
-This will allow you to show the simcity 2000 advisors.
+This repo will allow you to show the simcity 2000 advisors on an html page. They look like this:
+
+![Example 1](Example1.png?raw=true "Education example")
+
+![Example 2](Example2.png?raw=true "Police example")
 
 Demo: https://rawgit.com/kelvinperrie/simadvisor/master/demo.html
 
@@ -14,7 +18,7 @@ Demo: https://rawgit.com/kelvinperrie/simadvisor/master/demo.html
     <link href="advisors.css" rel="stylesheet">
     <script src="advisors.js"></script>
 ```
-* call the ShowAdvisor function when you want to show an advisor
+* call the ShowAdvisor function when you want to show an advisor, passing in the type of the advisor and the message to display
 ```
 $("#yourElement").on("click", function() {
     var type = 'fire';
@@ -23,7 +27,10 @@ $("#yourElement").on("click", function() {
     ShowAdvisor(type,message);
 });
 ```
-* the options for the different advisors are: tax, ordance, finance, police, fire, health, education, transportation
+
+## Advisor types
+
+The available types of advisors are: tax, ordance, finance, police, fire, health, education, transportation
 
 ## More examples
 
