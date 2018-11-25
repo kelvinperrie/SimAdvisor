@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-nz">
+<head>
+    <title>advisor demo</title>
+    <link href="advisors.css" rel="stylesheet">
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="advisors.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() { 
+            $("#tryIt1").on("click", function() {
+                var type = $('input[name=advisor-type]:checked').val();
+                var message = $('#advisorMessage').val();
+
+                ShowAdvisor(type,message);
+            });
+        });
+    </script>
+    <style>
+        body {
+            font-family: Tahoma,Verdana,Segoe,sans-serif; 
+        }
+        textarea {
+            width: 300px;
+            height: 80px;
+        }
+        textarea, input {
+            font-family: inherit;
+            font-size: inherit;
+        }
+        .example { 
+            cursor: pointer; 
+            text-decoration: underline;
+            margin-right: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <div>
+        <h2>Try it!</h2>
+    </div>
+    <ol>
+        <li> Select the type of advisor:
+            <div>
+                <input type="radio" id="tax" name="advisor-type" value="tax">
+                <label for="tax">Tax</label>
+            </div>
+            <div>
+                <input type="radio" id="ordance" name="advisor-type" value="ordance">
+                <label for="ordance">Ordance</label>
+            </div>
+            <div>
+                <input type="radio" id="finance" name="advisor-type" value="finance">
+                <label for="finance">Finance</label>
+            </div>
+            <div>
+                <input type="radio" id="police" name="advisor-type" value="police" checked="checked">
+                <label for="police">Police</label>
+            </div>
+            <div>
+                <input type="radio" id="fire" name="advisor-type" value="fire">
+                <label for="fire">Fire</label>
+            </div>
+            <div>
+                <input type="radio" id="health" name="advisor-type" value="health">
+                <label for="health">Health</label>
+            </div>
+            <div>
+                <input type="radio" id="education" name="advisor-type" value="education">
+                <label for="education">Education</label>
+            </div>
+            <div>
+                <input type="radio" id="transportation" name="advisor-type" value="transportation">
+                <label for="transportation">Transportation</label>
+            </div>
+        </li>
+        <li> Enter the message: <br/>
+            <textarea id="advisorMessage">I have no advice at this time.</textarea>
+        </li>
+        <li> Display it:<br/>
+            <button id="tryIt1" name="tryIt1" >Show the advisor</button>
+        </li>
+    </ol>
+
+    
+    <div>
+        <h2>Other examples</h2>
+        <span class="example" onclick="ShowAdvisor('education','A curriculum of 100% simpson\s repeats isn\'t working out like we planned.')">Example 1</span>
+        <span class="example" onclick="ShowAdvisor('health','Hospitals are fine and all, but for real good health you need a reliable intake of quality memes.')">Example 2</span>
+        <span class="example" onclick="ShowAdvisor('fire','Looks like \'someone\' set your house on fire again and due to budget cuts we didn\'t feel like putting it out.')">Example 3</span>
+        <span class="example" onclick="ShowAdvisor('finance','You really want my advice? With the latest crypto currency crash the city\'s solvency has really tanked. I\'m sailing my yacht to Rio within the hour and my advice is you do the same.')">Example 4</span>
+        <span class="example" onclick="ShowAdvisor('police','The biggest problem in policing today? Blue uniforms. Just ... not going to work with my complexion.')">Example 5</span>
+    </div>
+</body>
+</html>
