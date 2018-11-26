@@ -12,7 +12,6 @@ Demo: https://rawgit.com/kelvinperrie/simadvisor/master/demo.html
 
 ## Getting Started
 
-* put the images onto your file system at images/advisor. If you want to change the path you'll have to update it in the advisors.css file.
 * link the styles and js from your page
 ```
     <link href="advisors.css" rel="stylesheet">
