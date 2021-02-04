@@ -8,7 +8,7 @@ This repo will allow you to show the simcity 2000 advisors on an html page. They
 
 ![Example 2](Example2.png?raw=true "Police example")
 
-Demo: https://rawgit.com/kelvinperrie/simadvisor/master/demo.html
+Demo: https://simadvisor.netlify.app/demo.html
 
 ## Getting Started
 
